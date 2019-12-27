@@ -1,0 +1,19 @@
+{
+  "name": "node12-openssl-issue",
+  "version": "0.0.1",
+  "description": "Demonstrates issues using openssl with Node.js v12",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Spencer Holman <spencer.holman@evernym.com>",
+  "license": "ISC",
+  "gypfile": true,
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "ffi-napi": "^2.4.5"
+  }
+}

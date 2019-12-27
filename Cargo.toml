@@ -1,0 +1,15 @@
+[package]
+name = "test"
+version = "0.1.0"
+authors = ["Spencer Holman <spencer.holman@evernym.com>"]
+edition = "2018"
+
+[lib]
+name = "test"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+env_logger = "0.7.1"
+reqwest = "0.9.24"
+requests = "0.0.30"
+openssl = "0.10.26"
