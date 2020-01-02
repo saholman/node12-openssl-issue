@@ -1,7 +1,7 @@
 extern crate env_logger;
 extern crate openssl;
 extern crate reqwest;
-extern crate requests;
+// extern crate requests;
 
 use std::collections::HashMap;
 
@@ -51,13 +51,14 @@ pub extern fn post() -> u32 {
 
 #[no_mangle]
 pub extern fn get_with_requests() -> u32 {
-    match requests::get("https://httpbin.org/get") {
-        Ok(response) => {
-            assert_eq!(response.status_code(), requests::StatusCode::Ok);
-            SUCCESS
-        }
-        Err(_) => FAILURE
-    }
+    // match requests::get("https://httpbin.org/get") {
+    //     Ok(response) => {
+    //         assert_eq!(response.status_code(), requests::StatusCode::Ok);
+    //         SUCCESS
+    //     }
+    //     Err(_) => FAILURE
+    // }
+    SUCCESS
 }
 
 #[no_mangle]
