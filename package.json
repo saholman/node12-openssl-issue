@@ -11,7 +11,7 @@
   "gypfile": true,
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.2"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "ffi-napi": "^2.4.5"
